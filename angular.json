@@ -120,6 +120,10 @@
               "devServerTarget": "ng-outrance-technology:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
