@@ -1,110 +1,168 @@
-<mat-toolbar color="primary">
-  Outrance Apparel
-  <div class="flex-stretch"></div>
-  <mat-icon class="mr-8">brightness_5</mat-icon>
-  <mat-slide-toggle [formControl]="toggleControl" class="mr-8">
-  </mat-slide-toggle>
-  <mat-icon>bedtime</mat-icon>
-</mat-toolbar>
+<!--<button mat-button [matMenuTriggerFor]="menu">-->
+<!--  <mat-icon>more_vert</mat-icon>-->
+<!--</button>-->
 
 
-<div class="content mat-app-background" fxLayout="column" fxLayout.xs="column" fxLayoutGap="16px">
-  <h1>An Experience Beyond Apparel</h1>
-  <h2>Coming Soon</h2>
-  <img src="assets/img/OutranceTagV2.png" size
-       width="250"
-       height="250">
+<!--<mat-menu #menu="matMenu">-->
+<!--  <button mat-menu-item>-->
+<!--    <mat-icon>home</mat-icon>-->
+<!--    <span>Home</span>-->
+<!--  </button>-->
+<!--  <button mat-menu-item>About</button>-->
+<!--</mat-menu>-->
+
+<!--<mat-toolbar color="primary">-->
+<!--  <mat-toolbar-row>-->
+<!--    <button mat-icon-button>-->
+<!--      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>-->
+<!--    </button>-->
+<!--    <h1>Outrance Apparel</h1>-->
+<!--    <span class="menu-spacer"></span>-->
+<!--    <div class="flex-stretch"></div>-->
+<!--    <div>-->
+<!--      <a mat-button [routerLink]="'/accounts'"> Accounts </a>-->
+<!--      <a mat-button [routerLink]="'/create-account'"> Create Account </a>-->
+<!--      <a mat-button [routerLink]="'/contacts'"> Contacts </a>-->
+<!--      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>-->
+<!--      <a mat-button [routerLink]="'/activities'"> Activities </a>-->
+<!--      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>-->
+<!--    </div>-->
+<!--    <mat-icon class="mr-8">brightness_5</mat-icon>-->
+<!--&lt;!&ndash;    <mat-slide-toggle [formControl]="toggleControl" class="mr-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    </mat-slide-toggle>&ndash;&gt;-->
+<!--    <mat-icon>bedtime</mat-icon>-->
+<!--  </mat-toolbar-row>-->
+
+<!--  <mat-toolbar-row>-->
+<!--    <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>-->
+<!--  </mat-toolbar-row>-->
+<!--</mat-toolbar>-->
 
 
-  <p>
-    <a href="mailto:outranceapparel@gmail.com">outranceapparel@gmail.com</a>
-  </p>
-  <p>
-    <a href="https://www.instagram.com/outranceapparel/">Instagram</a>
-  </p>
-  <p>
-    <a href="https://www.twitter.com/outranceapparel/">Twitter</a>
-  </p>
-  <p>
-    <a href="https://www.patreon.com/OutranceApparel">Patreon</a>
-  </p>
+<!--<mat-sidenav-container>-->
+<!--  <mat-sidenav #sidenav>-->
+<!--    <mat-nav-list>-->
 
-</div>
+<!--      <a mat-list-item [routerLink]="'/accounts'"> Accounts </a>-->
+<!--      <a mat-list-item [routerLink]="'/create-account'"> Create Account </a>-->
+<!--      <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>-->
+<!--      <a mat-list-item [routerLink]="'/create-contact'"> Create Contact </a>-->
+<!--      <a mat-list-item [routerLink]="'/activities'"> Activities </a>-->
+<!--      <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a>-->
+<!--      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>-->
 
-<div class="content1 mat-app-background" fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px">
+<!--    </mat-nav-list>-->
+<!--  </mat-sidenav>-->
 
-  <div fxFlex="50">
-    <h1>Buttons</h1>
+<!--  <mat-sidenav-content>-->
+<!--    <div style="height: 88vh;">-->
+<!--      <router-outlet></router-outlet>-->
+<!--    </div>-->
+<!--  </mat-sidenav-content>-->
+<!--</mat-sidenav-container>-->
 
-    <div fxLayout="row" fxLayoutGap="16px">
-      <button mat-raised-button color="primary" (click)="showDialog()">
-        Open Dialog
-      </button>
-
-      <button mat-raised-button color="accent">
-        Accent button
-      </button>
-
-      <button mat-raised-button color="warn">
-        Warn button
-      </button>
-    </div>
-
-    <br><br>
-
-    <h1>Input</h1>
-
-    <mat-form-field>
-      <input matInput placeholder="Enter some information">
-    </mat-form-field>
-
-    <br><br>
-
-    <h1>Checkbox</h1>
-
-    <mat-checkbox>Check this box!</mat-checkbox>
-
-    <br><br>
-
-    <h1>Expansion panel</h1>
-
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          This is the expansion title
-        </mat-panel-title>
-        <mat-panel-description>
-          This is a summary of the content
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <p>This is the primary content of the panel.</p>
-    </mat-expansion-panel>
+<app-responsive-toolbar color="primary"></app-responsive-toolbar>
 
 
-    <br><br>
 
 
-  </div>
-  <div fxFlex="50">
-    <h1>A card</h1>
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </div>
+<!--<div class="content mat-app-background" fxLayout="column" fxLayout.xs="column" fxLayoutGap="16px">-->
+<!--  <h1>An Experience Beyond Apparel</h1>-->
+<!--  <h2>Coming Soon</h2>-->
+<!--  <img src="assets/img/OutranceTagV2.png" size-->
+<!--       width="250"-->
+<!--       height="250">-->
 
-</div>
+
+<!--  <p>-->
+<!--    <a href="mailto:outranceapparel@gmail.com">outranceapparel@gmail.com</a>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <a href="https://www.instagram.com/outranceapparel/">Instagram</a>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <a href="https://www.twitter.com/outranceapparel/">Twitter</a>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <a href="https://www.patreon.com/OutranceApparel">Patreon</a>-->
+<!--  </p>-->
+
+<!--</div>-->
+
+<!--<div class="content1 mat-app-background" fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px">-->
+
+<!--  <div fxFlex="50">-->
+<!--    <h1>Buttons</h1>-->
+
+<!--    <div fxLayout="row" fxLayoutGap="16px">-->
+<!--      <button mat-raised-button color="primary" (click)="showDialog()">-->
+<!--        Open Dialog-->
+<!--      </button>-->
+
+<!--      <button mat-raised-button color="accent">-->
+<!--        Accent button-->
+<!--      </button>-->
+
+<!--      <button mat-raised-button color="warn">-->
+<!--        Warn button-->
+<!--      </button>-->
+<!--    </div>-->
+
+<!--    <br><br>-->
+
+<!--    <h1>Input</h1>-->
+
+<!--    <mat-form-field>-->
+<!--      <input matInput placeholder="Enter some information">-->
+<!--    </mat-form-field>-->
+
+<!--    <br><br>-->
+
+<!--    <h1>Checkbox</h1>-->
+
+<!--    <mat-checkbox>Check this box!</mat-checkbox>-->
+
+<!--    <br><br>-->
+
+<!--    <h1>Expansion panel</h1>-->
+
+<!--    <mat-expansion-panel hideToggle>-->
+<!--      <mat-expansion-panel-header>-->
+<!--        <mat-panel-title>-->
+<!--          This is the expansion title-->
+<!--        </mat-panel-title>-->
+<!--        <mat-panel-description>-->
+<!--          This is a summary of the content-->
+<!--        </mat-panel-description>-->
+<!--      </mat-expansion-panel-header>-->
+<!--      <p>This is the primary content of the panel.</p>-->
+<!--    </mat-expansion-panel>-->
+
+
+<!--    <br><br>-->
+
+
+<!--  </div>-->
+<!--  <div fxFlex="50">-->
+<!--    <h1>A card</h1>-->
+<!--    <mat-card class="example-card">-->
+<!--      <mat-card-header>-->
+<!--        <div mat-card-avatar class="example-header-image"></div>-->
+<!--        <mat-card-title>Shiba Inu</mat-card-title>-->
+<!--        <mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+<!--      </mat-card-header>-->
+<!--      <mat-card-content>-->
+<!--        <p>-->
+<!--          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.-->
+<!--          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally-->
+<!--          bred for hunting.-->
+<!--        </p>-->
+<!--      </mat-card-content>-->
+<!--      <mat-card-actions>-->
+<!--        <button mat-button>LIKE</button>-->
+<!--        <button mat-button>SHARE</button>-->
+<!--      </mat-card-actions>-->
+<!--    </mat-card>-->
+<!--  </div>-->
+
+<!--</div>-->

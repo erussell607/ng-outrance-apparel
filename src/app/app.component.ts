@@ -1,5 +1,4 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
-import {FormControl} from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {OverlayContainer} from '@angular/cdk/overlay';
 import {SampleDialogComponent} from './sample-dialog/sample-dialog.component';
@@ -12,29 +11,14 @@ import {SampleDialogComponent} from './sample-dialog/sample-dialog.component';
 
 export class AppComponent implements OnInit {
   title = 'ng-outrance-apparel';
-  @HostBinding('class') className = '';
-  toggleControl = new FormControl(false);
+
 
   constructor(private dialog: MatDialog, private overlay: OverlayContainer) {
   }
 
   ngOnInit(): void {
-    this.toggleControl.valueChanges.subscribe((darkMode) => {
-      const darkClassName = 'darkMode';
-      this.className = darkMode ? darkClassName : '';
-      if (darkMode) {
-        this.overlay.getContainerElement().classList.add(darkClassName);
-      } else {
-        this.overlay.getContainerElement().classList.remove(darkClassName);
-      }
-    });
 
   }
 
-  showDialog(): void {
-    this.dialog.open(SampleDialogComponent,
-      {
-        width: '500px'
-      });
-  }
+
 }
