@@ -26,6 +26,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './blog/blog.component';
+import { ResponsiveFooterComponent } from './responsive-footer/responsive-footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BlogComponent } from './blog/blog.component';
     AboutComponent,
     PageNotFoundComponent,
     HomeComponent,
-    BlogComponent
+    BlogComponent,
+    ResponsiveFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { BlogComponent } from './blog/blog.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    // MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
