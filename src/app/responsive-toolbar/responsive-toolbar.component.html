@@ -2,7 +2,35 @@
   <button mat-icon-button>
     <mat-icon>checkroom</mat-icon>
   </button>
-  <span fxFlex>Outrance Apparel</span>
+  <span fxFlex>Outrance Apparel
+
+&nbsp;&nbsp;
+
+    <!--    email-->
+    <a class="ins-ic" href="mailto:outranceapparel@gmail.com" target="_blank">
+      <mdb-icon far icon="envelope" size="1x" class="white-text  mr-md-3 mr-1 "></mdb-icon>
+    </a>
+
+
+    <!-- Twitter -->
+    <a class="tw-ic" ref="https://www.twitter.com/outranceapparel/" target="_blank">
+      <mdb-icon fab icon="twitter" size="1x" class="white-text   mr-md-3 mr-1"></mdb-icon>
+    </a>
+
+    <!--Instagram-->
+    <a class="ins-ic" href="https://www.instagram.com/outranceapparel/" target="_blank">
+      <mdb-icon fab icon="instagram" size="1x" class="white-text  mr-md-3 mr-1"></mdb-icon>
+    </a>
+
+    <!--Patreon-->
+    <a class="ins-ic" href="https://www.patreon.com/OutranceApparel" target="_blank">
+      <mdb-icon fab icon="patreon" size="1x" class="white-text  mr-md-3 mr-1"></mdb-icon>
+    </a>
+
+
+</span>
+
+
   <button mat-button *ngFor="let item of menuItems"
           [fxShow]="item.showOnDesktop"
           [fxShow.xs]="item.showOnMobile"

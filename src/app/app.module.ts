@@ -22,11 +22,12 @@ import {AppRoutingModule} from './app-routing.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {ResponsiveToolbarComponent} from './responsive-toolbar/responsive-toolbar.component';
-import { AboutComponent } from './about/about.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
-import { ResponsiveFooterComponent } from './responsive-footer/responsive-footer.component';
+import {AboutComponent} from './about/about.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {HomeComponent} from './home/home.component';
+import {BlogComponent} from './blog/blog.component';
+import {ResponsiveFooterComponent} from './responsive-footer/responsive-footer.component';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,7 @@ import { ResponsiveFooterComponent } from './responsive-footer/responsive-footer
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    // MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
