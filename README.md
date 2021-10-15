@@ -41,6 +41,9 @@ https://zoaibkhan.com/blog/create-a-responsive-toolbar-in-angular-using-flex-lay
 
 https://zoaibkhan.com/blog/angular-material-dark-mode-in-3-steps/
 
+## Footer/Style addon
+https://mdbootstrap.com/docs/angular/
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out
